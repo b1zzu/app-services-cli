@@ -13,7 +13,7 @@ import (
 )
 
 const (
-	legalNameChars       = "^[a-zA-Z0-9\\_\\-]+$"
+	legalNameChars       = `(\.{3,}|^.{1}[a-zA-Z0-9\_\\-]{1}[a-zA-Z0-9\\._\\-]*|^.{2}[a-zA-Z0-9\\._\\-]+$|[a-zA-Z0-9\_\\-]+[a-zA-Z0-9\\._\\-]*)`
 	maxNameLength        = 249
 	minReplicationFactor = 1
 	minPartitions        = 1
